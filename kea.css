@@ -6,6 +6,15 @@ body {
     font-size: 14px;
 }
 
+#name, #pw {
+    border: 3px solid;
+}
+
+#sendButton {
+    font-size: 20px;
+    background-color: red;
+}
+
 /*Profile section styling*/
 .profile {
     background-color: beige;
@@ -23,6 +32,7 @@ body {
 
 /* The login form */
 #loginForm {
+    font-size: 20px;
     height: 100%;
     /* 100% Full-height */
     width: 0;

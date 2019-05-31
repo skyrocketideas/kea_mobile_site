@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Document head-->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +11,16 @@
 </head>
 
 <body>
+    <!--Document Header-->
     <header>
         <h1>KEA Mobile</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Login</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="settings.html">Settings</a></li>
-            </ul>
-        </nav>
+        <button id="open">PRESS</button>
     </header>
+
+    <!--Document main-->
     <main>
         <section>
+            <!--Login form-->
             <form id="loginForm" action="profile.html">
                 <h2>Login</h2>
                 <label for="name">Username</label>
@@ -33,8 +31,19 @@
             </form>
         </section>
     </main>
-    <footer>Footer</footer>
-    <script src=""></script>
+    <!--Document footer-->
+    <footer>Copyright KEA 2019</footer>
+
+    <script>
+        //        Open login form with button
+        document.getElementById("open").addEventListener("click", openNav);
+
+        //        Function for login form open
+        function openNav() {
+            document.getElementById("loginForm").style.width = "100%";
+        }
+    </script>
+
 </body>
 
 </html>

@@ -1,16 +1,43 @@
+/*Body styling*/
 body {
+    box-sizing: border-box;
+    margin: 1.5em;
     font-family: arial;
     font-size: 14px;
 }
 
+/*Profile section styling*/
 .profile {
     background-color: beige;
 }
 
+/*Feedback section styling*/
 .feedback {
     background-color: aqua;
 }
 
+/*Portfolio section styling*/
 .portfolio {
     background-color: coral;
+}
+
+/* The login form */
+#loginForm {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 0%;
+    /* Place content from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
 }

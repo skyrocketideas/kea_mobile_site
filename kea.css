@@ -2,3 +2,15 @@ body {
     font-family: arial;
     font-size: 14px;
 }
+
+.profile {
+    background-color: beige;
+}
+
+.feedback {
+    background-color: aqua;
+}
+
+.portfolio {
+    background-color: coral;
+}

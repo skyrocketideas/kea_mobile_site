@@ -9,17 +9,29 @@
 </head>
 
 <body>
-    <header>Header
+    <header>
+       <h1>KEA Mobile</h1>
         <nav>
             <ul>
-                <li><a href="#index">Login</a></li>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="feedback">Feedback</a></li>
-                <li><a href="settings">Settings</a></li>
+                <li><a href="index.html">Login</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="settings.html">Settings</a></li>
             </ul>
         </nav>
     </header>
-    <main>Main</main>
+    <main>
+        <section>
+            <form id="loginForm" action="profile.html">
+                <h2>Login</h2>
+                <label for="name">Username</label>
+                <input type="text" id="name" placeholder="Username">
+                <label for="pw">Password</label>
+                <input type="password" id="pw" placeholder="Password">
+                <input type="submit" value="send">
+            </form>
+        </section>
+    </main>
     <footer>Footer</footer>
     <script src=""></script>
 </body>

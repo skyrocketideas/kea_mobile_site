@@ -6,10 +6,13 @@ body {
     font-size: 14px;
 }
 
-#name, #pw {
+/*Username and password on login styling*/
+#name,
+#pw {
     border: 3px solid;
 }
 
+/*Send button on login styling*/
 #sendButton {
     font-size: 20px;
     background-color: red;
@@ -50,4 +53,47 @@ body {
     /* Place content from the top */
     transition: 0.5s;
     /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+header {
+    background-color: darkgoldenrod;
+    animation: boxopen 2s ease-in-out 0.1s 1 normal;
+}
+
+.profile {
+    background-color: chartreuse;
+    animation: boxopen 2s ease-in-out 0.2s 1 normal;
+}
+
+.feedback {
+    background-color: aqua;
+    animation: boxopen 2s ease-in-out 0.2s 1 normal;
+}
+
+.feedback:hover {
+    background-color: blueviolet;
+    transition: 1s;
+}
+
+.portfolio {
+    background-color: beige;
+    animation: boxopen 2s ease-in-out 0.3s 1 normal;
+}
+
+footer {
+    background-color: darkorange;
+    animation: boxopen 2s ease-in-out 0.5s 1 normal;
+}
+
+@keyframes boxopen {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
 }

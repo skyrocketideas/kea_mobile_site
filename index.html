@@ -42,6 +42,14 @@
         function openNav() {
             document.getElementById("loginForm").style.width = "100%";
         }
+
+        //         Send button //
+        document.getElementById("sendButton").addEventListener("click", closeNav);
+
+        //        Function for login form close
+        function closeNav() {
+            document.getElementById("loginForm").style.width = "0";
+        }
     </script>
 
 </body>

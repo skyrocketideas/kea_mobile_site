@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+/*Body styling*/
+body {
+    background-color: aquamarine;
+    margin: 0;
+    font-family: arial;
+    font-size: 14px;
+}
+
 h2 {
     color: #ea5045;
     text-transform: uppercase;
@@ -11,30 +19,34 @@ h2 {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    width: 200px;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
     background-color: #f1f1f1;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
 }
 
 li a {
-    display: block;
     color: #000;
-    padding: 8px 16px;
+    padding: 10px 20px;
     text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
 }
 
 /*Change link color on hover*/
 li a:hover {
     background-color: #555;
     color: white;
-}
-
-/*Body styling*/
-body {
-    background-color: aquamarine;
-    margin: 1.5em;
-    font-family: arial;
-    font-size: 14px;
 }
 
 /*Username and password on login styling*/
@@ -73,8 +85,8 @@ body {
 
 /*Header styling and animation*/
 header {
-    margin: 10px;
-    padding: 10px;
+    margin: 1.5em;
+    padding: 1.5em;
     background-color: #ea5045;
     border-radius: 5px;
     animation: boxopen 2s ease-in-out 0.1s 1 normal;
@@ -82,8 +94,8 @@ header {
 
 /*Profile styling and animation*/
 .profile {
-    margin: 10px;
-    padding: 10px;
+    margin: 1.5em;
+    padding: 1.5em;
     background-color: #fff;
     border-radius: 5px;
     animation: boxopen 2s ease-in-out 0.2s 1 normal;
@@ -91,8 +103,8 @@ header {
 
 /*Feedback styling and animation*/
 .feedback {
-    margin: 10px;
-    padding: 10px;
+    margin: 1.5em;
+    padding: 1.5em;
     background-color: #fff;
     border-radius: 5px;
     animation: boxopen 2s ease-in-out 0.2s 1 normal;
@@ -100,14 +112,14 @@ header {
 
 /*Feedback hover effect*/
 .feedback:hover {
-    background-color: blue;
-    transition: 1s;
+    background-color: bisque;
+    transition: .5s;
 }
 
 /*Portfolio styling and animation*/
 .portfolio {
-    margin: 10px;
-    padding: 10px;
+    margin: 1.5em;
+    padding: 1.5em;
     background-color: #fff;
     border-radius: 5px;
     animation: boxopen 2s ease-in-out 0.3s 1 normal;
@@ -115,8 +127,8 @@ header {
 
 /*Footer styling and animation*/
 footer {
-    margin: 10px;
-    padding: 10px;
+    margin: 1.5em;
+    padding: 1.5em;
     background-color: #fff;
     border-radius: 5px;
     animation: boxopen 2s ease-in-out 0.5s 1 normal;

@@ -1,6 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #ea5045;
+    text-transform: uppercase;
+}
+
+/*Navigation styling*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/*Change link color on hover*/
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
 /*Body styling*/
 body {
-    box-sizing: border-box;
+    background-color: aquamarine;
     margin: 1.5em;
     font-family: arial;
     font-size: 14px;
@@ -16,21 +47,6 @@ body {
 #sendButton {
     font-size: 20px;
     background-color: red;
-}
-
-/*Profile section styling*/
-.profile {
-    background-color: beige;
-}
-
-/*Feedback section styling*/
-.feedback {
-    background-color: aqua;
-}
-
-/*Portfolio section styling*/
-.portfolio {
-    background-color: coral;
 }
 
 /* The login form */
@@ -55,37 +71,58 @@ body {
     /* 0.5 second transition effect to slide in the sidenav */
 }
 
-
+/*Header styling and animation*/
 header {
-    background-color: darkgoldenrod;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ea5045;
+    border-radius: 5px;
     animation: boxopen 2s ease-in-out 0.1s 1 normal;
 }
 
+/*Profile styling and animation*/
 .profile {
-    background-color: chartreuse;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
     animation: boxopen 2s ease-in-out 0.2s 1 normal;
 }
 
+/*Feedback styling and animation*/
 .feedback {
-    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
     animation: boxopen 2s ease-in-out 0.2s 1 normal;
 }
 
+/*Feedback hover effect*/
 .feedback:hover {
-    background-color: blueviolet;
+    background-color: blue;
     transition: 1s;
 }
 
+/*Portfolio styling and animation*/
 .portfolio {
-    background-color: beige;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
     animation: boxopen 2s ease-in-out 0.3s 1 normal;
 }
 
+/*Footer styling and animation*/
 footer {
-    background-color: darkorange;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
     animation: boxopen 2s ease-in-out 0.5s 1 normal;
 }
 
+/*Keyframes for section animation*/
 @keyframes boxopen {
     0% {
         width: 0%;
